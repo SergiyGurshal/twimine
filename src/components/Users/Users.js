@@ -5,6 +5,8 @@ import fetchUsersFromServer from '../../redux/actions/fetch-users-action'
 
 import PageSlider from '../PageSlider/PageSlider'
 import UserInfo from '../UserInfo/UserInfo'
+
+import './users.sass'
 const Users = ({ fetchUsers, users }) => {
   useEffect(() => {
     function fetch() {
