@@ -7,6 +7,8 @@ import './post.sass'
 const Post = ({ title, body, postId }) => {
   return (
     <div className="post">
+      <p className="title">{title.charAt(0).toUpperCase() + title.slice(1)}</p>
+      <p className="body">{body.charAt(0).toUpperCase() + body.slice(1)}</p>
       <Link
         to={{
           pathname: '/post-info',
@@ -15,11 +17,10 @@ const Post = ({ title, body, postId }) => {
           },
         }}
         params={{ postId }}
+        className="test"
       >
         <img src={moreIcon} alt="more" className="morebtn" />
       </Link>
-      <p className="title">{title.charAt(0).toUpperCase() + title.slice(1)}</p>
-      <p className="body">{body.charAt(0).toUpperCase() + body.slice(1)}</p>
     </div>
   )
 }

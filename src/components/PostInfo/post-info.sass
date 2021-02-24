@@ -11,6 +11,7 @@
     height: 80%
     background-color: #950740
     padding: 1rem
+    position: relative
 
     .title
       text-align: center
@@ -42,19 +43,23 @@
       overflow: auto
 
     .buttons-container
+      position: absolute
+      bottom: 1rem
+      right: 1rem
       display: flex
       justify-content: center
       align-items: center
+      width: fit-content
 
-    .button
-
-      border-radius: .5rem
-      border: 1px solid #fff
-      color: #fff
-      width: 5rem
-      text-align: center
-      padding: .6rem 0
-      background-color: #6F2232
+      .button
+        margin-left: 1rem
+        border-radius: .5rem
+        border: 1px solid #fff
+        color: #fff
+        width: 5rem
+        text-align: center
+        padding: .6rem 0
+        background-color: #6F2232
 
 
 @media only screen and (max-width: 780px) 
